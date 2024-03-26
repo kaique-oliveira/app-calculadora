@@ -1,13 +1,7 @@
-import styled, { DefaultTheme } from "styled-components/native";
-import theme from "../../theme";
-// import t from "../../theme";
-// import { useChangeTheme } from "../../hooks/ChangeTheme";
+import styled from "styled-components/native";
+import { SafeAreaView } from "react-native";
 
-// const { getTheme } = useChangeTheme();
-
-// const theme = getTheme === "dark" ? t.dark : t.light;
-
-export const Container = styled.View`
+export const Container = styled(SafeAreaView)`
   background-color: ${({ theme }) => theme.COLORS.GRAY_100};
   flex: 1;
 `;
