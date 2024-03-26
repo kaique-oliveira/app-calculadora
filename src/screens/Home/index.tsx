@@ -27,6 +27,7 @@ import React, { useEffect, useRef, useState } from "react";
 import AllClear from "../../assets/AllClear";
 import Sun from "../../assets/Sun";
 import Moon from "../../assets/Moon";
+import { StatusBar } from "react-native";
 
 type TypeOperator = "*" | "/" | "+" | "-" | "=";
 
@@ -104,6 +105,12 @@ export function Home() {
 
   return (
     <ThemeProvider theme={getTheme === "dark" ? theme.dark : theme.light}>
+      <StatusBar
+        barStyle={getTheme === "light" ? "dark-content" : "light-content"}
+        backgroundColor={"transparent"}
+        translucent
+      />
+
       <Container>
         <WrapperHistory>
           <History>
@@ -127,6 +134,7 @@ export function Home() {
             value={input}
             onChange={() => {}}
             onKeyUp={(e) => handleDefineNumbers(e.key)}
+            showSoftInputOnFocus={false}
           />
         </WrapperPrompt>
 
