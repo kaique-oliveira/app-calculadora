@@ -9,8 +9,8 @@ type Props = {
 };
 
 export const Container = styled(TouchableOpacity)<Props>`
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 
   border-radius: 20px;
 
@@ -35,7 +35,7 @@ export const Container = styled(TouchableOpacity)<Props>`
           border: 1px solid ${props.theme.COLORS.GRAY_200};
         `
       : css`
-          height: 142px;
+          height: 152px;
         `}
 `;
 
@@ -47,8 +47,17 @@ export const Title = styled.Text<Props>`
 `;
 
 export const Gradient = styled(LinearGradient)`
-  height: 142px;
+  width: 70px;
+  height: 152px;
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Wrapper = styled.View`
   width: 60px;
+  height: 60px;
   border-radius: 20px;
 
   justify-content: center;

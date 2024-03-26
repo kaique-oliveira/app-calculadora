@@ -1,5 +1,11 @@
 import { TouchableOpacityProps } from "react-native";
-import { ButtonStyledProp, Container, Gradient, Title } from "./styles";
+import {
+  ButtonStyledProp,
+  Container,
+  Gradient,
+  Title,
+  Wrapper,
+} from "./styles";
 import { ReactElement } from "react";
 
 type Props = TouchableOpacityProps & {
@@ -14,9 +20,13 @@ export function Button({ variant = "TEXT", text = "", icon, ...rest }: Props) {
       {variant === "HIGHLIGHT" ? (
         <Gradient colors={["rgba(238,19,145,1)", "rgba(253,86,51,1)"]}>
           {text && <Title variant={variant}>{text}</Title>}
+          {icon && icon}
         </Gradient>
       ) : (
-        <Title variant={variant}>{text}</Title>
+        <Wrapper>
+          {text && <Title variant={variant}>{text}</Title>}
+          {icon && icon}
+        </Wrapper>
       )}
     </Container>
   );
