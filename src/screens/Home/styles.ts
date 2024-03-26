@@ -70,9 +70,7 @@ export const WrapperPrompt = styled.View`
 
 export const Input = styled.TextInput`
   width: 95%;
-  border: none;
-  box-shadow: none;
-  outline: none;
+
   background-color: transparent;
 
   color: ${({ theme }) => theme.COLORS.GRAY_300};

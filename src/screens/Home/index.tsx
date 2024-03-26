@@ -24,9 +24,9 @@ import {
   ArrowLeft,
 } from "phosphor-react-native";
 import React, { useEffect, useRef, useState } from "react";
-import SunSvg from "../../assets/SunSvg.svg";
-import AllClearSvg from "../../assets/AllClearSvg.svg";
-import MoonSvg from "../../assets/MoonSvg.svg";
+import AllClear from "../../assets/AllClear";
+import Sun from "../../assets/Sun";
+import Moon from "../../assets/Moon";
 
 type TypeOperator = "*" | "/" | "+" | "-" | "=";
 
@@ -133,22 +133,28 @@ export function Home() {
         <WrapperButtons>
           <GroupButtonsDefault>
             <Button
-              icon={getTheme === "dark" ? <SunSvg /> : <MoonSvg />}
+              icon={getTheme === "dark" ? <Sun /> : <Moon />}
               variant="OUTLINED"
               onPress={handleChangeTheme}
             />
             <Button
-              icon={<ArrowLeft />}
+              icon={
+                <ArrowLeft
+                  color={getTheme === "dark" ? "#E9E9E9" : "#212327"}
+                />
+              }
               variant="CONTAINED"
               onPress={handleDeleteCharacter}
             />
             <Button
-              icon={<Divide />}
+              icon={
+                <Divide color={getTheme === "dark" ? "#E9E9E9" : "#212327"} />
+              }
               variant="CONTAINED"
               onPress={() => handleDefineOperator("/")}
             />
             <Button
-              icon={<X />}
+              icon={<X color={getTheme === "dark" ? "#E9E9E9" : "#212327"} />}
               variant="CONTAINED"
               onPress={() => handleDefineOperator("*")}
             />
@@ -171,7 +177,9 @@ export function Home() {
               onPress={() => handleDefineNumbers("9")}
             />
             <Button
-              icon={<Minus />}
+              icon={
+                <Minus color={getTheme === "dark" ? "#E9E9E9" : "#212327"} />
+              }
               variant="CONTAINED"
               onPress={() => handleDefineOperator("-")}
             />
@@ -194,7 +202,9 @@ export function Home() {
               onPress={() => handleDefineNumbers("6")}
             />
             <Button
-              icon={<Plus />}
+              icon={
+                <Plus color={getTheme === "dark" ? "#E9E9E9" : "#212327"} />
+              }
               variant="CONTAINED"
               onPress={() => handleDefineOperator("+")}
             />
@@ -223,7 +233,7 @@ export function Home() {
               <GroupButtonsThreeColumns>
                 <Button
                   variant="TEXT"
-                  icon={<AllClearSvg />}
+                  icon={<AllClear />}
                   onPress={handleClearAll}
                 />
                 <Button
@@ -239,7 +249,7 @@ export function Home() {
               </GroupButtonsThreeColumns>
             </RowsGroupButtons>
             <Button
-              icon={<Equals />}
+              icon={<Equals color="#E9E9E9" />}
               variant="HIGHLIGHT"
               onPress={handleFinishOperation}
             />
