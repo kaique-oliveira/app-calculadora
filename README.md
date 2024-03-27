@@ -17,9 +17,9 @@ Calculadora
 
 <p>Clique no YouTube para visualizar o video em uma melhor qualidade 📽️.</p>
 
-| GIF   | <a style="color: white; text-decoration: none">YouTube</a> | 
+| GIF   | YouTube | 
 :--------:| :---------:|
-| <img src="src/assets/app-calculadora.gif" width="100"> | [<img src="src/assets/cover-app.PNG" width="100">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video") |
+| <img src="src/assets/app-calculadora.gif" width="200"> | [<img src="src/assets/cover-youtube.png" width="200">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video") |
 
 
 
