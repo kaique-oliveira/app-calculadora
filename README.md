@@ -4,4 +4,5 @@
 <p>Projeto em desenvolvido 🚀👨🏻‍💻,logo será incluido mais informações e demonstrações</p>
 
 
-<iframe width="400" height="800" src="https://youtube.com/shorts/giaztgArb2g?feature=share" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="320" height="569" src="https://www.youtube.com/embed/giaztgArb2g" title="Calculadora - ReactNative" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
