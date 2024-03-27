@@ -1,10 +1,56 @@
-<h3
->Calculadora React-Native</h3>
 
-<p>Projeto em desenvolvido 🚀👨🏻‍💻,logo será incluido mais informações e demonstrações</p>
+<h1 align="center">
+  <br>
+<img src="src/assets/icon-calculadora.png" alt="Markdownify" width="200">
+  <br>
+Calculadora
+  <br>
+</h1>
+
+<h4 align="center">Um aplicativo de calculadora básica utilizando  <a href="https://reactnative.dev/docs/getting-started" target="_blank">React Native</a>.</h4>
 
 
+
+
+
+
+
+<p>Clique no YouTube para visualizar o video em uma melhor qualidade 📽️.</p>
+
+
+<div style="display: flex; gap: 16px; padding: 0px 16px; justify-content: space-around; width: 100%;">
+
+
+<div style="width: 100%;">
+<p style="margin-bottom: 2px">GIF</p>
 
 ![screenshot](src/assets/app-calculadora.gif)
+</div>
 
-[<img src="src/assets/cover-app.PNG" width="50%">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video")
+<div style="width: 100%;">
+<a href="https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT" style="margin-bottom: 2px; text-decoration: none;
+    color: inherit;" >YouTube</a>
+
+[<img src="src/assets/cover-app.PNG" width="165">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video")
+</div>
+</div>
+
+## Características principais
+
+* **Layout Limpo** - Uma interface organizada e intuitiva que permite aos usuários identificar facilmente os botões de números, operadores e outras funções.
+
+* **Botões Númericos e de Operação** - Botões claros e bem distribuídos para números (0-9) e operadores básicos (adição, subtração, multiplicação, divisão).
+
+* **Botão de Igualdade** - Um botão de "igual" para realizar o cálculo quando os números e operadores forem inseridos.
+
+* **Botão de Limpeza** - Um botão distintamente visível e de fácil acesso para limpar a tela da calculadora e iniciar uma nova operação, além de outro botão para apagar gradualmente a entrada do usuário, permitindo corrigir erros de digitação de forma conveniente e precisa.
+
+* **Exibição de histórico** - Uma área de exibição ampla e destacada, que apresenta claramente a última operação realizada. Além disso, permite aos usuários clicar sobre ela para recuperar a operação anterior, facilitando a revisão e a correção de cálculos.
+
+* **Funcionalidade Adicional** - Botão de alternância entre temas escuro e claro, permitindo aos usuários personalizar a aparência da calculadora de acordo com suas preferências de visualização, seja em ambientes com pouca luz ou luminosos.
+
+## Como usar
+
+Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/en/download/) (que vem com o [npm](http://npmjs.com)) instalados em seu computador. 
+<br>
+Na sua linha de comando:
