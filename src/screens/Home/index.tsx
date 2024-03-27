@@ -54,7 +54,7 @@ export function Home() {
     if (key.match(/\d+/) || key.match(/[,]/)) {
       setInput(`${input}${key}`);
     } else if (key.match(/[\'+\=\/\*\-]/)) {
-      if (key === "=" || key === "Enter") {
+      if (key === "=") {
         handleFinishOperation();
       } else {
         handleDefineOperator(key as TypeOperator);
