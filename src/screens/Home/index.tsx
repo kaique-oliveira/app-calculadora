@@ -59,8 +59,6 @@ export function Home() {
       } else {
         handleDefineOperator(key as TypeOperator);
       }
-    } else if (key === "Backspace") {
-      handleDeleteCharacter();
     } else {
       return;
     }
@@ -82,10 +80,16 @@ export function Home() {
       setHistory([
         input.replaceAll(".", ","),
         "=",
-        Number(`${result}`).toFixed(2).replace(".", ","),
+        `${result}`.includes(".")
+          ? Number(`${result}`).toFixed(2).replace(".", ",")
+          : `${result}`,
       ]);
 
-      setInput(Number(`${result}`).toFixed(2).replace(".", ","));
+      if (`${result}`.includes(".")) {
+        setInput(Number(`${result}`).toFixed(2).replace(".", ","));
+      } else {
+        setInput(`${result}`);
+      }
     }
   }
 
