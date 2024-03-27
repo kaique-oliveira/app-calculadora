@@ -6,3 +6,5 @@
 
 
 ![screenshot](src/assets/app-calculadora.gif)
+
+[<img src="src/assets/cover-app.PNG" width="50%">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video")
