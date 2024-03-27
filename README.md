@@ -12,15 +12,18 @@ Calculadora
 
 
 
-
-
-
-<p>Clique no YouTube para visualizar o video em uma melhor qualidade 📽️.</p>
+<p>Clique no player para visualizar em alta qualidade 🖥️.</p>
 
 | GIF   | YouTube | 
 :--------:| :---------:|
 | <img src="src/assets/app-calculadora.gif" width="200"> | [<img src="src/assets/cover-youtube.png" width="200">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video") |
 
+
+## Protótipo figma
+
+<p>Clique na imagem para visualizar no figma.</p>
+
+  [<img src="src/assets/cover-figma.png" width="100%">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Visualizar no figma")
 
 
 
@@ -43,3 +46,46 @@ Calculadora
 Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/en/download/) (que vem com o [npm](http://npmjs.com)) instalados em seu computador. 
 <br>
 Na sua linha de comando:
+
+```bash
+# Clone o repositorio
+$ git clone https://github.com/kaique-oliveira/app-calculadora.git
+
+# Entre no repositório
+$ cd app-calculadora
+
+# Instalar dependências
+$ npm install
+
+# Execute o aplicativo
+$ npm start 
+
+# Execute o aplicativo direto no emulador IOS
+$ npm run ios 
+
+# Execute o aplicativo direto no emulador Android
+$ npm run android 
+```
+
+## Credits
+
+Principais frameworks e bibliotecas utilizados:
+
+- [Expo](https://expo.dev)
+- [React-Native](https://reactnative.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [Styled-Components](https://styled-components.com)
+- [Phosphor-React-Native](https://github.com/duongdev/phosphor-react-native)
+- [React-Native-Linear-Gradient](https://www.npmjs.com/package/react-native-linear-gradient)
+- [React-Native-Safe-Area-Context](https://www.npmjs.com/package/react-native-safe-area-context)
+- [React-Native-SVG](https://www.npmjs.com/package/react-native-svg)
+
+## License
+
+MIT
+
+---
+
+> GitHub [@kaique-oliveira](https://github.com/kaique-oliveira) &nbsp;&middot;&nbsp;
+> Linkedin [@kaique-oliveira](https://www.linkedin.com/in/kaique-oliveira-a21273162/)
+
