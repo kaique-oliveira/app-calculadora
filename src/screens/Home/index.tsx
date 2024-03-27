@@ -37,7 +37,6 @@ export function Home() {
   const inputRef = useRef<HTMLInputElement>(null);
   const [input, setInput] = useState<string>("");
   const [history, setHistory] = useState<string[]>([]);
-  const [lineOperation, setLineOperation] = useState<string[]>([]);
 
   function handleChangeTheme() {
     if (getTheme === "light") {
@@ -53,8 +52,8 @@ export function Home() {
 
   function handleDefineNumbers(key: string) {
     if (key.match(/\d+/) || key.match(/[,]/)) {
-      setInput(input + key);
-    } else if (key.match(/[\'+\=\/\*\-]/) || key === "Enter") {
+      setInput(`${input}${key}`);
+    } else if (key.match(/[\'+\=\/\*\-]/)) {
       if (key === "=" || key === "Enter") {
         handleFinishOperation();
       } else {
@@ -68,33 +67,38 @@ export function Home() {
   }
 
   function handleDefineOperator(operator: TypeOperator) {
-    setHistory([input, operator]);
-    setLineOperation([...lineOperation, input, operator]);
-    setInput("");
+    if (input.match(/\d+/)) {
+      setInput(`${input} ${operator} `);
+    }
   }
 
   function handleFinishOperation() {
-    const operation = lineOperation.reduce(
-      (prev, his) => prev + his.replace(/,/g, "."),
-      ""
-    );
+    if (
+      input
+        .replaceAll(",", ".")
+        .match(/^\s*(-?\d*\.?\d+)\s*([-+*/]\s*-?\d*\.?\d+\s*)+$/)
+    ) {
+      const result = eval(input.replace(/,/g, "."));
+      setHistory([
+        input.replaceAll(".", ","),
+        "=",
+        Number(`${result}`).toFixed(2).replace(".", ","),
+      ]);
 
-    const result = eval(operation + input.replace(/,/g, "."));
-    setHistory([
-      ...history,
-      input.replace(/,/g, "."),
-      "=",
-      `${result}`.replace(".", ","),
-    ]);
-
-    setInput(`${result}`.replace(".", ","));
-    setLineOperation([]);
+      setInput(Number(`${result}`).toFixed(2).replace(".", ","));
+    }
   }
 
   function handleClearAll() {
     setHistory([]);
     setInput("");
-    setLineOperation([]);
+  }
+
+  function backHistory() {
+    const his = history.map((x) => ` ${x} `);
+
+    setInput(his.slice(0, his.indexOf(" = ")).join(" ").trim());
+    setHistory([]);
   }
 
   useEffect(() => {
@@ -113,7 +117,7 @@ export function Home() {
 
       <Container>
         <WrapperHistory>
-          <History>
+          <History onPress={backHistory}>
             {history.length > 0 && history.map((x) => ` ${x} `)}
           </History>
           <ClockCounterClockwise

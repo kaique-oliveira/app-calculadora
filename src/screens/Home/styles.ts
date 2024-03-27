@@ -42,6 +42,7 @@ export const ColumnsGroupButtons = styled.View`
 `;
 
 export const RowsGroupButtons = styled.View`
+  width: 74%;
   display: grid;
 
   grid-template-rows: 1.5fr 1.5fr;
@@ -55,7 +56,6 @@ export const GroupButtonsThreeColumns = styled.View`
   flex-direction: row;
 
   justify-content: space-between;
-  gap: 29px;
 `;
 
 export const WrapperPrompt = styled.View`
