@@ -24,14 +24,16 @@ Calculadora
 <div style="width: 100%;">
 <p style="margin-bottom: 2px">GIF</p>
 
-![screenshot](src/assets/app-calculadora.gif)
+<!-- ![screenshot](src/assets/app-calculadora.gif) -->
+
+<img src="src/assets/app-calculadora.gif" width="100">
 </div>
 
 <div style="width: 100%;">
 <a href="https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT" style="margin-bottom: 2px; text-decoration: none;
     color: inherit;" >YouTube</a>
 
-[<img src="src/assets/cover-app.PNG" width="165">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video")
+[<img src="src/assets/cover-app.PNG" width="100">](https://youtube.com/shorts/giaztgArb2g?si=0F3dF1EJGt4g6jwT "Assistir ao video")
 </div>
 </div>
 
